@@ -4,6 +4,21 @@ public class Circle {
 	
 	private int radius;
 	private Point center;
+	private boolean selected;
+	
+	public Circle() {
+		
+	}
+	
+	public Circle(int radius, Point center) {
+		this.radius = radius;
+		this.center = center;
+	}
+	
+	public Circle(int radius, Point center, boolean selected) {
+		this(radius, center);
+		this.selected = selected;
+	}
 	
 	public Point getCenter() {
 		return center;
